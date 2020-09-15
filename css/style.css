@@ -31,7 +31,7 @@ body {
 	background-color: var(--black);
 	color: var(--white);
 	font-family: var(--font-family);
-	margin: 15px;
+	margin: 0px;
 	padding: 0px;
 }
 
@@ -94,7 +94,7 @@ body {
 .around-daan table tr td {
 	max-width: 3em;
 	min-width: 3em;
-	height: 100px;
+	height: 90px;
 	text-align: center;
 	padding: 0px;
 	margin: 0px;
