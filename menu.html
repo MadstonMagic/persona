@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link rel="shortcut icon" href="https://i7.pngguru.com/preview/688/747/723/google-i-o-emoji-android-oreo-sunglasses-emoji.jpg" />
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script>
+			$(function() {
+				$('.copy-to-clipboard input').click(function() {
+					$(this).focus();
+					$(this).select();
+					document.execCommand('copy');
+					$(".copied").fadeIn(300).show();
+				});
+				
+				$('.copied').on('click', function() {
+					$('.copied').fadeOut(300)
+				})
+			});
+		</script>
+		
+		<style>
+			body {
+				background-color: rgba(19, 19, 19, 1);
+				color: #fff;
+				font-family: Arial, Calibri;
+				margin: 0px;
+				padding: 0px;
+				overflow-x: hidden;
+			}
+			
+			.menu-button-wrapper {
+				position: fixed;
+				display: block;
+				top: 90%;
+				right: 2.5%;
+				background: rgb(255, 255, 255);
+				border-radius: 100%;
+				height: 50px;
+				width: 50px;
+				padding: 5px;
+				transition: all 0.2s;
+				border: 1px solid rgb(1, 90, 255);
+			}
+			.menu-button-wrapper:hover {
+				background: black;
+				
+			}
+			.menu-button-wrapper a {
+				position: absolute;
+				top: 45%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				text-decoration: none;
+				color: rgb(1, 90, 255);
+				font-size: 38px;
+				font-weight: bold;
+			}
+			
+			.copied {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				display:none;
+				background-color: rgba(0, 0, 0, 0.75);
+				width: 100%;
+				height: 100%;
+				cursor: pointer;
+				z-index: 10000;
+			}
+			.copied .title {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color:  #fff;
+				font-size: 45px;
+			}
+			
+			.copy-to-clipboard {
+				margin: 20px 0px;
+				border-bottom: 5px solid rgba(1, 90, 255, 1);
+				width: 100%;
+			}
+			.copy-to-clipboard input {
+				margin: 20px 0px;
+			}
+			
+			.copy-to-clipboard .name{
+				color: rgba(1, 90, 255, 1);
+				font-size: 26px;
+			}
+			.copy-to-clipboard .alias {
+				color: rgba(152, 188, 255, 1);
+				font-size: 16px;
+				font-style: italic;
+			}
+			
+			.copy-to-clipboard input {
+				font-size: 34px;
+				width: 75%;
+				position: relative;
+				left: 50%;
+				transform: translate(-50%,0);
+				cursor: pointer;
+				border: none;
+				transition: all 0.2s;
+				text-align: center;
+				padding: 10px;
+			}
+			.copy-to-clipboard input:hover {
+				font-size: 34px;
+				background: rgba(1, 90, 255, 1);
+			}
+			.copy-to-clipboard input:focus {
+				background-color: green;
+				outline: none;
+			}
+			.copy-to-clipboard input::selection {
+				background-color: transparent;
+			}
+			.emoji-list-table {
+				width: 100%;
+				padding: 15px;
+			}
+			.menu-table tr {			
+				width: 100%
+			}
+			.menu-table tr td {
+				width: 350px;
+			}
+			
+			#emoji-list-wrapper {
+				width: 100%;
+				height: auto;
+				background-color: #000;
+				border-bottom: 5px solid rgba(1, 90, 255, 1);
+				padding: 5px 10px;				
+			}
+			#emoji-list-wrapper .emoji-list ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				display: inline-block;				
+			}
+			#emoji-list-wrapper .emoji-list ul li {
+				margin: 10px;	
+			}
+			#emoji-list-wrapper .emoji-list ul li a {
+				text-decoration: none;
+				color: #fff;
+				font-size: 18px;
+				transition: all 0.2s;
+			}
+			#emoji-list-wrapper .emoji-list ul li:hover a {
+				color: rgba(255, 255, 255, 0.5);
+				padding-left: 25px;
+			}
+			#emoji-list-wrapper .emoji-list ul li:hover a::before {
+				position: absolute;
+				display: block;
+				float: left;
+				color: rgba(1, 90, 255, 1);
+			}
+			
+			
+			/* Emoji's in the menu items */
+			#emoji-list-wrapper .emoji-list ul li:hover a::before {
+				content: ">>";
+			}
+			
+			
+			.img-wrapper #img {
+				background-image: url(https://i1.sndcdn.com/artworks-9aN1QDWYelcTyB7x-wCCLEg-t500x500.jpg);
+				width: 500px;
+				height: 500px;
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+		<div class="menu-button-wrapper">
+			<a href="#emoji-list-wrapper">↑↑</a>
+		</div>
+		
+		<div id="emoji-list-wrapper">
+			<div class="emoji-list">
+			<h2>Emoji Menu</h2>
+				<table class="menu-table">
+					<tr>
+						<td>
+							<ul>
+								<li class="list-joy"><a href="#joy">Joy emoji</a></li>
+								<li class="list-sweat-smile"><a href="#sweat-smile">Sweat smile emoji</a></li>
+								<li class="list-smiling"><a href="#smiling">Smiling emoji</a></li>
+								<li class="list-see-no-evil"><a href="#see-no-evil">See No Evil emoji</a></li>
+								<li class="list-upside-down"><a href="#upside-down">Upside-down emoji</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li class="list-winking"><a href="#winking">Winking emoji</a></li>
+								<li class="list-tongue-wink"><a href="#tongue-wink">Winking with Tongue out emoji</a></li>
+								<li class="list-tongue-out"><a href="#tongue-out">Tongue sticking out emoji</a></li>
+								<li class="list-heart"><a href="#heart">Heart emoji</a></li>
+								<li class="list-hot"><a href="#hot">Hot with sweat emoji</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li class="list-innocent"><a href="#innocent">Innocent emoji</a></li>
+								<li class="list-scream"><a href="#scream">Screaming emoji</a></li>
+							</ul>
+						</td>					
+					</tr>
+				</table>
+			</div>
+		</div>
+		
+		<div class="body-main">
+			
+		</div>
+	</body>
+</html>
+
+
+
+
