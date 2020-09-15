@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<link rel="shortcut icon" href="icon.png" />
+		<title>Daan Persona | Poster</title>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="../Persona/css/style.css" />
+		
+		<!-- Click Functions -->
+		<script>
+			$(document).ready(function() {
+			
+				//Clickable MBO
+				$('td.mbo .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Muziek
+					$('#vorige-mbo').css("display", "block");
+				});
+				$('.exitMBO').on('click', function() {				
+					//Exit MBO
+					$('#vorige-mbo').css("display", "none");
+				});
+				
+				
+				//Clickable Muziek
+				$('td.muziek .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Muziek
+					$('#muzieksmaak').css("display", "block");
+				});
+				$('.exitMuziek').on('click', function() {				
+					// Exit Muziek
+					$('#muzieksmaak').css("display", "none");
+				});
+				
+				
+				//Clickable Hobbies
+				$('td.hobbies .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Hobbies
+					$('#hobbies').css("display", "block");
+				});
+				$('.exitHobbies').on('click', function() {				
+					// Exit Hobbies
+					$('#hobbies').css("display", "none");
+				});
+				
+				
+				//Clickable Werk
+				$('td.werk .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Werk
+					$('#werk').css("display", "block");
+				});
+				$('.exitWerk').on('click', function() {				
+					// Exit Werk
+					$('#werk').css("display", "none");
+				});
+				
+				
+				//Clickable Hier Na
+				$('td.hier-na .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Hier Na
+					$('#hier-na').css("display", "block");
+				});
+				$('.exitHierNa').on('click', function() {				
+					// Exit Hier Na
+					$('#hier-na').css("display", "none");
+				});
+				
+				
+				//Clickable Jeugd
+				$('td.jeugd .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Jeugd
+					$('#jeugd').css("display", "block");
+				});
+				$('.exitJeugd').on('click', function() {				
+					// Exit Jeugd
+					$('#jeugd').css("display", "none");
+				});
+				
+				
+				//Clickable Games
+				$('td.games .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Games
+					$('#games').css("display", "block");
+				});
+				$('.exitGames').on('click', function() {				
+					// Exit Games
+					$('#games').css("display", "none");
+				});
+			})
+		
+		</script>
+		
+		<!-- Animations -->
+		<script>
+			$(document).ready(function() {
+			
+				function animateButton() {
+					$('.around-daan .click.bounce1').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce2').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce3').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce4').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce5').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce6').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce7').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce9').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce10').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce11').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+				}
+				animateButton();
+			});
+		</script>
+		<style>
+			@keyframes enlarge {
+				0% {width: 35%}
+				25% {width: 37.5%}
+				50% {width: 35%}
+			}
+		</style>
+	</head>
+
+	<body class="body-home">		
+		<div>
+			<div class="background">
+				<table>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td><img src=""></td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		
+			<div class="around-daan">
+				<table>
+				<!-- RIJ #1 -->
+					<tr>
+						<td class="animated jeugd">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/jeugd.png">
+								<div class="click bounce1"><span>Mijn jeugd</span></div>
+							</div>							
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated games">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/hobby.png">
+								<div class="click bounce6"><span>Favoriete Games</span></div>
+							</div>
+						</td>
+					</tr>
+				<!-- RIJ #2 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="animated mbo">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/graduation.png">
+								<div class="click bounce2"><span>Vorige MBO</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<!-- RIJ #3 -->
+					<tr>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated rrrr">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/graduation.png">
+								<div class="click bounce7"><span>[Insert Text]</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				<!-- RIJ #4 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="animated hobbies">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/hobby.png">
+								<div class="click bounce3"><span>Hobbies</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated rrrr">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/graduation.png">
+								<div class="click bounce8"><span>[Insert Text]</span></div>
+							</div>
+						</td>
+					</tr>
+				<!-- RIJ #5 -->
+					<tr>						
+						<td class="animated werk">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/work.png">
+								<div class="click bounce4"><span>Mijn werk</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<!-- RIJ #6 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated rrrr">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/graduation.png">
+								<div class="click bounce9"><span>[Insert Text]</span></div>
+							</div>
+						</td>
+					</tr>
+				<!-- RIJ #7 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td class="animated hier-na">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/question.png">
+								<div class="click bounce5"><span>Na SintLucas</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				<!-- RIJ #8 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated rrrr">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/graduation.png">
+								<div class="click bounce10"><span>[Insert Text]</span></div>
+							</div>
+						</td>
+						<td>&nbsp;</td>
+					</tr>
+				<!-- RIJ #9 -->
+					<tr>
+						<td class="animated muziek">
+							<div class="img-wrapper">
+								<img class="image" src="../Persona/images/music.png">
+								<div class="click bounce1"><span>Muziek</span></div>
+							</div>							
+						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<div class="ik-ben-daan-wrapper">
+							<img class="ik-ben-daan-image" src="../Persona/work/ik-ben-daan.png">
+						</div>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>			
+			</div>
+			
+			<div class="imageMiddle">
+				<table>
+					<tr>
+						<td>&nbsp;</td>
+						<td>MP4 video</td>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			<!-- Tekst Vroeger -->
+			<div class="about-me clickable" id="jeugd">
+				<div class="exitJeugd">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Mijn Jeugd</h3>
+					<p>
+						Ik heb eigenlijk niet echt de beste jeugd gehad als ik eerlijk ben.
+						<br>
+						Op de basisschool (en daarna ook het VMBO) veel gepest en pas op het MBO was ik daar een beetje van af.
+						<br>
+						<br>
+						Ik ben opgegroeid met Pokémon en dat vond ik vroeger zo leuk dat ik destijds op vakanties altijd veel van mijn eigen monstertjes verzon.
+						<br>
+						Ik heb nog een van de boeken waar ik destijds in heb getekent. Ik heb wat foto's geplaatst op de pagina als je hier onder klikt.
+					</p>
+					<a class="learnMore" href="../Persona/pages/jeugd.html">Voorbeelden zien? Klik hier!</a>
+				</div>				
+			</div>
+			
+			<!-- Tekst Muziek -->
+			<div class="about-me clickable" id="muzieksmaak">
+				<div class="exitMuziek">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Mijn Muzieksmaken</h3>
+					<p>
+						Simelweg gezegd, kan ik overal naar lusiteren.
+						<br>
+						Maar ik luister op het moment veel naar:
+						<br>
+						<ul>
+							<li>Rawstyle</li>
+							<li>Hardstyle</li>
+							<li>Frenchcore</li>
+							<li>Alternative Pop</li>
+						</ul>
+						<br>
+						Een paar van mijn leukste artisten op het moment:
+						<br>
+						<ul>
+							<li>Gnash</li>
+							<li>Vertile</li>
+							<li>Crypton</li>
+							<li>Warface</li>
+							<li>Sickmode</li>
+						</ul>						
+					</p>
+					<a class="learnMore" href="../Persona/pages/muziek.html">Meer zien, of horen? Klik hier!</a>
+				</div>				
+			</div>
+			
+			<!-- Tekst MBO -->
+			<div class="about-me clickable" id="vorige-mbo">
+				<div class="exitMBO">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Mijn Vorige MBO</h3>
+					<p>
+						Applicatieontwikkeling! En ik heb dat diploma gehaald in 2018.
+						<br>
+						Het was echt niet wat ik wilde, en heb daarom 2 tussenjaren genomen.
+						<br>
+						<br>
+						Ik heb in deze 2 jaren veel gewerkt en ook geprobeerd een portfolio op te bouwen.
+						<br>
+						Helaas was dit portfolio verre van genoeg om een HBO te doen, vandaar de keuze voor deze opleiding.					
+					</p>
+					<a class="learnMore" href="../Persona/pages/mbo-ao.html">Dit is niet zo boeiend, maar je mag meer weten. Klik dan hier!</a>
+				</div>				
+			</div>
+			
+			<!-- Tekst Hobbies -->
+			<div class="about-me clickable" id="hobbies">
+				<div class="exitHobbies">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Wat zijn mijn hobbies...</h3>
+					<p>
+						Zoals je misschien rechts al hebt gezien, houd ik heel erg van 3D objecten.	
+						<br>
+						Zelf maak ik voor Minecraft al sinds 2015 3D modellen, en die verkoop ik door over de hele wereld.
+						<br>
+						<br>
+						Dat is ook de reden waarom ik nu hier ben, ik wil graag "professioneel" leren modeleren, zodat ik daarmee de Game Industrie in kan.
+					</p>
+					<a class="learnMore" href="../Persona/pages/hobbies.html">Hier staan hele leuke dingen! Klik maar gewoon. </a>
+				</div>				
+			</div>
+			
+			<!-- Tekst Werk -->
+			<div class="about-me clickable" id="werk">
+				<div class="exitWerk">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Werk ik ook nog wel eens?</h3></h3>
+					<p>
+						Dat is een hele goede vraag, en kort antwoord: Af en toe.
+						<br>
+						Ik ben nog in dienst met een 0 uren contract bij het Sportiom (zwembad) maar daar is nu niks te doen.
+						<br>
+						<br>
+						Omdat ik thuis regelmatig mijn eigen projecten doe met mijn 3D modellen, verdien ik daar af en toe wat aan.
+						<br>
+						Tevens werk ik soms nog voor mijn oude stage, waar ik geen contract heb maar wel per uur betaald wordt.
+					</p>
+					<a class="learnMore" href="../Persona/pages/werk.html">Wat voorbeelden zien? Klik dan hier.</a>
+				</div>				
+			</div>
+			
+			<!-- Tekst Na Sint Lucas -->
+			<div class="about-me clickable" id="hier-na">
+				<div class="exitHierNa">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Wat na het SintLucas doen?</h3></h3>
+					<p>
+						Ik heb 2 gedachtes op het moment waarvan eentje toch wat sterker is dan de ander.
+						<br>
+						En die zijn dat ik na het SintLucas nog het HBO wil gaan doen, University of Breda (Game Art ook) of een eigen bedrijfje opzetten.
+						<br>
+						<br>
+						Zelf gaat mijn keuze uit naar HBO, omdat ik dan gewoon meer mogelijkheden daarna heb. Ik ben dan waarschijnlijk wel 29 als ik klaar ben maar hopelijk kan ik dan meteen aan het werk.
+						<br>
+						<br>
+						Als ik een bedrijfje op wil zetten moet ik daar wel echt goed over nadenken. Want dat is niet 1-2-3 gedaan.
+					</p>
+					<a class="learnMore" href="../Persona/pages/na-sintlucas.html">Meer uitleg? Lees het hier.</a>
+				</div>				
+			</div>
+			
+			<!-- Tekst Games -->
+			<div class="about-me clickable" id="games">
+				<div class="exitGames">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Mijn favoriete games</h3></h3>
+					<p>
+						Persoonlijk ben ik wel van de FPS games, survival games of gewoon een game waar een goed verhaal in zit.
+						<br>
+						RPG's of die klik games, houd ik echt niet van (Sorry L.O.L mensen).
+						<br>
+						<br>
+						Op het moment speel ik regelmatig Call Of Duty WWII, geen MW want naar mijn mening is dat echt een flop.
+						<br>
+						En daarom wacht ik ook heel erg op Black Ops Cold War.
+						<br>
+						Verder ben ik ook een best groot fan van Subnautica, het verhaal, de aanpak van die game, de style. Alles klopt gewoon.
+						<br>
+						Ik vind vooral de eerste Subnautica heel goed, want aangezien het een terror game is houdt de game je op het puntje van je stoel terwijl je rustig rond zwemt.
+					</p>
+					<a class="learnMore" href="../Persona/pages/games.html">Hier vind je wat van de games.</a>
+				</div>				
+			</div>
+			
+			<!-- END DOCUMENT -->
+		</div>
+	</body>
+</html>
+
+
+
+
