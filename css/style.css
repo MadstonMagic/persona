@@ -267,7 +267,7 @@ a.learnMore:hover:before, alearnMore:focus:before {
 	left: 0;
 	top: 0;
 	padding: 35px;
-	background: rgba(0,0,0,0.75);
+	background: rgba(0,0,0,0.95);
 	z-index: 10000000;
 	display: none;
 }

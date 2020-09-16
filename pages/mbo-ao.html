@@ -14,10 +14,10 @@
 					var source = $(this).attr('src');
 					
 					$('.img-large img').attr('src', source);
-					$('.img-large').css('display','block');
+					$('.img-large').fadeIn(300);
 				});
 				$('.img-large .exit').on('click', function() {
-					$('.img-large').css('display','none');					
+					$('.img-large').fadeOut(300);				
 				});
 			})
 		</script>
@@ -35,7 +35,7 @@
 					<table class="menu">
 						<tr>
 							<td>
-								<a class="custom" href="../index.html">Terug naar de home</a>
+								<a class="custom" href="../">Terug naar de home</a>
 							</td>					
 						</tr>
 					</table>
