@@ -6,27 +6,14 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Daan Persona | Vorige MBO</title>
-		<!-- On Page JS -->
-		<script>
-			$(document).ready(function() {
-			
-				$('.row-content img').on('click', function() {
-					var source = $(this).attr('src');
-					
-					$('.img-large img').attr('src', source);
-					$('.img-large').fadeIn(300);
-				});
-				$('.img-large .exit').on('click', function() {
-					$('.img-large').fadeOut(300);				
-				});
-			})
-		</script>
+		<!-- Page JS -->
+		<script src="../js/scripts.js"></script>
 	</head>
-	<body class="subpage">
+	<body class="subpage" id="top">
 		<div class="content">
 			<!-- To Top Button -->
 			<div class="to-top-button-wrapper">
-				<a href="#menu-list-wrapper">↑</a>
+				<a>↑</a>
 			</div>
 			
 			<!-- Back to home menu -->
@@ -45,9 +32,12 @@
 			
 			<!-- Subpage Content -->
 			<div class="body-main">
-				<div class="img-large">
+				<div id="img-large">
 					<img src="">
-					<p class="exit">X</p>
+					<p class="exit">
+						X						
+						<span class="esc">(of 'esc')</span>
+					</p>
 				</div>
 			
 				<table class="content-table">
@@ -68,15 +58,15 @@
 									Maar ik zal in het kort uitleggen wat we op de opleiding hebben gedaan, wat ik er wel en niet heb geleerd en wat mijn dilemma was destijds.
 									<br>
 									<br>
-									Nou de opleiding (toen ik er zat) bestond voornamelijk uit het process naar het maken van software.
+									Nou de opleiding (toen ik er zat) bestond voornamelijk uit het proces naar het maken van software.
 									<br>
-									Het was niet alleen (zoals ik dacht, en hoorde op de open dagen toen) programmeren en daarme leuke programma's maken en uiteindelijk games maken. <b>(Ja dat werd verteld dat je daar games ging maken)</b>.
+									Het was niet alleen (zoals ik dacht, en hoorde op de open dagen toen) programmeren en daarmee leuke programma's maken en uiteindelijk games maken. <b>(Ja dat werd verteld dat je daar games ging maken)</b>.
 									<br>
 									<br>
 									Nou het eerste jaar was voornamelijk HTML/CSS/JavaScript. En dus waar je nu naar kijkt, de website, heb ik ook zelf vanaf scratch gemaakt. Dat heb ik dus allemaal te danken aan dat eerste jaar.
 									<br>
 									<br>
-									De tweede en derde jaren waren meer gericht op het process van het maken van software met de talen C++ en C#.
+									De tweede en derde jaren waren meer gericht op het proces van het maken van software met de talen C++ en C#.
 									<br>
 									We kregen niet veel programmeren, maar wel super veel saaie lessen in het Analyseren, documenteren en het maken van ontwerpen. Kortom, dat was eigenlijk niet zo leuk.
 									<br>
@@ -99,6 +89,9 @@
 									<br>
 									<br>
 									En daarom heb ik in de 2 tussenjaren na deze opleiding ook gewerkt bij mijn oude stagebedrijf waar ik hielp met websites bouwen.
+									<br>
+									<br>
+									<img src="../images/hcj.png" style="width:100%;">
 								</p>
 							</div>
 						</td>
@@ -153,10 +146,12 @@
 									<br>
 									Mensen die dit kennen zeggen nu waarschijnlijk "Gadver, WordPress", maar maakt mij niet uit want ik heb daardoor wel een leuke 2e stage gehad.
 									<br>
+									Je kan hier meer over lezen bij het kopje over <a href="../pages/werk.html" class="txt-link">mijn werk</a>.
+									<br>
 									<br>
 									Nadat ik me had ingeschreven bij het SintLucas, en ook het toelatingsgesprek zeer vlekkeloos verliep kreeg wel echt weer heel veel zin om naar school te gaan.
 									<br>
-									Al mijn vrienden zaten dan op het HBO (of nog MBO) en ik was maar aan het werk, dus dat vond ik eigenlijk niet zo prettig. Gelukkgi heb ik wat kunnen verdienen en daarmee een goede laptop kunnen kopen voor school, en thuis natuurlijk.
+									Al mijn vrienden zaten dan op het HBO (of nog MBO) en ik was maar aan het werk, dus dat vond ik eigenlijk niet zo prettig. Gelukkig heb ik wat kunnen verdienen en daarmee een goede laptop kunnen kopen voor school, en thuis natuurlijk.
 								</p>
 							</div>
 						</td>

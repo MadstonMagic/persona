@@ -6,27 +6,14 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Daan Persona | Muziek</title>
-		<!-- On Page JS -->
-		<script>
-			$(document).ready(function() {
-			
-				$('.row-content img').on('click', function() {
-					var source = $(this).attr('src');
-					
-					$('.img-large img').attr('src', source);
-					$('.img-large').fadeIn(300);
-				});
-				$('.img-large .exit').on('click', function() {
-					$('.img-large').fadeOut(300);				
-				});
-			})
-		</script>
+		<!-- Page JS -->
+		<script src="../js/scripts.js"></script>
 	</head>
-	<body class="subpage">
+	<body class="subpage" id="top">
 		<div class="content">
 			<!-- To Top Button -->
 			<div class="to-top-button-wrapper">
-				<a href="#menu-list-wrapper">↑</a>
+				<a>↑</a>
 			</div>
 			
 			<!-- Back to home menu -->
@@ -39,15 +26,18 @@
 							</td>					
 						</tr>
 					</table>
-					<h1>De muziek van Daan</h1>
+					<h1>De muziek waar ik naar luister</h1>
 				</div>
 			</div>
 			
 			<!-- Subpage Content -->
 			<div class="body-main">
-				<div class="img-large">
+				<div id="img-large">
 					<img src="">
-					<p class="exit">X</p>
+					<p class="exit">
+						X						
+						<span class="esc">(of 'esc')</span>
+					</p>
 				</div>
 			
 				<table class="content-table">
@@ -75,7 +65,10 @@
 										<li>Alesso</li>
 										<li>Dimitri Vegas & Like Mike</li>
 										<li>Tiësto</li>
+										<li>W&amp;W</li>
+										<li>Hardwell</li>
 									</ul>
+									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/159622976&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 								</p>
 							</div>
 						</td>
@@ -83,7 +76,7 @@
 							<div class="row-content">
 								<h2 class="title-h2 title">Muziek op vakanties</h2>
 								<p>
-									Ik ben iemand die playlisten maakt voor bijvoorbeeld seizoenen of vakanties.
+									Ik ben iemand die playlists maakt voor bijvoorbeeld seizoenen of vakanties.
 									<br>
 									Een voorbeeld is dat ik veel muziek luister in de zomer maar niet in de winter omdat die liedjes mij herinneren aan de leuke zomervakanties van vroeger waar ik toen ook die liedjes luisterde.
 									<br>
@@ -95,6 +88,7 @@
 									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/149534831&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/170858050&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/262461470&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/228472739&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 								</p>
 							</div>
 						</td>
@@ -107,26 +101,30 @@
 									Maar naast die "harde" muziek luister ik ook wel naar alternatieve muziek van artiesten zoals Gnash. Zijn meest bekende liedje is "I hate u, I love u" met Olivia O'Brien.
 								</p>
 								<p>
-									Een paar voorbeelden van liedjes die ik nu luistser
 									<ul>
 										<li>
 											Playlist van de Hardstyle, Rawstyle, Hardcore en Frenchcore waar ik nu naar luister.
 											<br>
-											<iframe style="width:100%;height:350px;" src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLY13wvY3azVqZNA-xelhwYlqqiM_d9ys0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+											<br>
+											Luister tips: (klik het icoontje links van de 3 puntjes rechts-bovenin)
+											<ul>
+												<li>(2) Krowdexx - Flying Dutchman <span class="orange"></span>(2:16)</li>
+												<li>(20) Sickmode - Emoji (0:30)</li>
+												<li>(21) Code Crime - Bass Demon (1:06)</li>
+												<li>(36) Luminite - Bass Criminal (0:35)</li>
+												<li>(55) Ditcher - Addiction (2:10)</li>
+												<li>(99) GRAVEDGR - 6 FEEN UNDER (Ncrypta Remix) (2:05)</li>
+												<li>(112) Crypton - Next Level (1:30 - 2:30)</li>
+												<li>(112) Crypton - Next Level (1:30 &amp; 2:30)</li>
+												<li>(140) Anderex - Go Insane (2:35)</li>
+											</ul>
+											<iframe style="width:100%;height:350px;" src="https://www.youtube.com/embed/videoseries?list=PLY13wvY3azVqZNA-xelhwYlqqiM_d9ys0" frameborder="0" allow="controls; accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 										</li>
-										<br>
 										<li>
-											Hieronder zijn wat liedjes van Gnash die ik heel leuk vind om te luisteren, ook omdat de tekst zo af en toe toch wel persoonlijk aankomt.
+											Hieronder zijn wat liedjes van Gnash die ik heel leuk vind om te luisteren, vooral omdat de tekst toch wel hard aankomt. Ik heb stiekem ook, toen ik me heel slecht voelde, veel zitten janken tijdens deze liedjes.
 											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/483330237&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/289194238&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/216383661&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
-										</li>
-										<br>
-										<li>
-											Mijn favoriete genre op het moment is Rawstyle, en hier zijn een paar favoriete liedjes daar van:
-											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/781494943&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
-											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/781497148&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
-											<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/603920811&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 										</li>
 									</ul>
 								</p>
@@ -134,19 +132,19 @@
 						</td>
 						<td class="row row2">
 							<div class="row-content">
-								<h2 class="title-h2 title">Toen mijn blik op de toekomst</h2>
+								<h2 class="title-h2 title">Video Game soundtracks</h2>
 								<p>
-									Destijds vond ik tekenen heel leuk, maar ik kon er niks van. Toch op het VMBO heb ik veel getekend.
-									<br>
-									Alleen ik wilde daar toen niks mee doen. Ik wilde toen al, omdat ik zo geïnteresseerd was in games, in de toekomst mijn eigen games maken.
-									<br>
-									Wat daar van is gekomen lees je bij het stukje van <a href="../pages/mbo-ao.html" class="txt-link">mijn vorige MBO</a>.
-								</p>
-								<p>
-									Naast dat ik mijn eigen games wilde maken dacht je toen natuurlijk ook na over hoe je leven zelf er uit zou zien.
+									Muziek wordt natuurlijk ook heel veel gebruikt in video games, en er zijn een paar games die muziek bevatten die ik wel echt kan luisteren op elk moment van de dag.<br>
 									<br>
 									<br>
-									Dus ik natuurlijk met m'n grote dromen zag het zo voor me: Groot huis, zelf ontworpen en laten bouwen, een vrouw en kinderen, huisdieren, een kamer voor een drumstel en natuurlijk een grote tuin met zwembad.
+									Voorbeelden hiervan zijn, Undertale en Doom.
+									<br>
+									(Ja Megalovania meme, maar is gewoon een goede track)
+									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226899939&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/226900183&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
+									<br>
+									<br>Ben eigenlijk niet zo een fan van heavy metal, maar voor de een of andere manier vind ik dit wel sick om te horen.
+									<iframe width="100%" height="200" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/805614091&color=%230094ff&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true"></iframe>
 								</p>
 							</div>
 						</td>

@@ -6,27 +6,14 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<link rel="stylesheet" href="../css/style.css" />
 		<title>Daan Persona | Hobbies</title>
-		<!-- On Page JS -->
-		<script>
-			$(document).ready(function() {
-			
-				$('.row-content img').on('click', function() {
-					var source = $(this).attr('src');
-					
-					$('.img-large img').attr('src', source);
-					$('.img-large').fadeIn(300);
-				});
-				$('.img-large .exit').on('click', function() {
-					$('.img-large').fadeOut(300);				
-				});
-			})
-		</script>
+		<!-- Page JS -->
+		<script src="../js/scripts.js"></script>
 	</head>
-	<body class="subpage">
+	<body class="subpage" id="top">
 		<div class="content">
 			<!-- To Top Button -->
 			<div class="to-top-button-wrapper">
-				<a href="#menu-list-wrapper">↑</a>
+				<a>↑</a>
 			</div>
 			
 			<!-- Back to home menu -->
@@ -45,9 +32,12 @@
 			
 			<!-- Subpage Content -->
 			<div class="body-main">
-				<div class="img-large">
+				<div id="img-large">
 					<img src="">
-					<p class="exit">X</p>
+					<p class="exit">
+						X						
+						<span class="esc">(of 'esc')</span>
+					</p>
 				</div>
 			
 				<table class="content-table">
@@ -63,7 +53,6 @@
 									Dus werdt er een eigen manier gemaakt voor het inladen van 3D modellen, namelijk met gebruik van JSON bestanden.
 									<br>
 									JSON is een taal met eigenlijk alleen maar, haakjes ([{, hoge komma's " en stipjes :.
-									Hieronder een voorbeeld van hoe het er uit ziet, in de zin van de 3D modellen voor Minecraft.
 									<br>
 									<br>
 									Eerst waren er nog geen software om de modellen te maken dus moest ik het eerste halve jaar alle modellen met de hand in code typen.
@@ -153,17 +142,48 @@
 							<div class="row-content">
 								<h2 class="title-h2 title">En natuurlijk nog andere hobbies</h2>
 								<p>
-									Destijds vond ik tekenen heel leuk, maar ik kon er niks van. Toch op het VMBO heb ik veel getekend.
+									Naast mijn 3D model werk heb ik natuurlijk ook nog andere hobbies.
 									<br>
-									Alleen ik wilde daar toen niks mee doen. Ik wilde toen al, omdat ik zo geïnteresseerd was in games, in de toekomst mijn eigen games maken.
+									Vroeger vond ik tekenen heel leuk maar dat is in de afgelopen jaren er toch wel uit gegaan.
 									<br>
-									Wat daar van is gekomen lees je bij het stukje van <a href="../pages/mbo-ao.html" class="txt-link">mijn vorige MBO</a>.
-								</p>
-								<p>
-									Naast dat ik mijn eigen games wilde maken dacht je toen natuurlijk ook na over hoe je leven zelf er uit zou zien.
+									Zo af en toe, als ik tijd heb omdat ik niet werk, dan speel ik ook nog wel eens een game natuurlijk.
+									Je kan wat meer info over die games vinden op de pagina, <a class="txt-link" href="../pages/games.html">favoriete games</a>.
 									<br>
 									<br>
-									Dus ik natuurlijk met m'n grote dromen zag het zo voor me: Groot huis, zelf ontworpen en laten bouwen, een vrouw en kinderen, huisdieren, een kamer voor een drumstel en natuurlijk een grote tuin met zwembad.
+									Ik heb hier wel een lijstje met de games die ik vroeger leuk vond, en nu.
+									<ul>
+										<li>
+											<h4 class="title">Call of Duty: World At War</h4>
+											<p>
+												COD WAW was mijn eerste Call Of Duty game en tot heden is het nog steeds mijn favoriete.<br>
+												Momenteel speel ik daarom ook Call Of Duty WWII, een beetje nostalgie van de tijd van World At War.
+											</p>
+										</li>
+										<li>
+											<h4 class="title">Call of Duty: Black Ops (1 en 2)</h4>
+											<p>
+												COD BO was, zoals bekend in de community, een zeer goed spel met een heel erg interessant verhaal.<br>
+												Ik heb destijds zowel BO1 als BO2 op de PS3 uitgespeeld, Campaign op hardcore, Multiplayer Prestige Master met alles goud (En in BO2 alles Diamond camo).
+											</p>
+										</li>
+										<li>
+											<h4 class="title">Pokémon Diamond, Pearl en Platinum</h4>
+											<p>
+												Zoals ik bij mijn jeugd heb verteld ben ik opgegroeid met Pokémon. Ik heb wel Pokémon Red gespeeld bijvoorbeeld, maar van alle die ik heb gespeeld is en blijft Generatie 4 het beste.
+												<br>
+												Dus Pokémon Diamond, Pearl en Platinum. De nieuwste game, Shield heb ik wel, maar vond het eigenlijk zo'n slechte game dat ik nog niet eens op de helft van dat verhaal ben.
+											</p>
+										</li>
+										<li>
+											<h4 class="title">Subnautica</h4>
+											<p>
+												Ik ben best wel fan van first person games die het net iets anders aanpakken. Subnautica is wel een goed voorbeeld er van. Een survival game (zowat) geheel onder water.<br>
+												Maar naast dat het een survival game onder water is, heeft het ook gewoon een heel goed verhaal. Omdat het een terror game is, dus niet per sé horror, <br> 
+												is het gevoel dat eigenlijk niet alleen bent in die zee heel leuk om te ervaren, je kamer helemaal donker, dan in de donkere gedeeltes van die game zitten en dan niet wetend wat er leeft.
+											</p>
+											<img src="../images/subnautica.png" class="img-txt" style="height:auto;width:100%;">
+										</li>
+									</ul>
 								</p>
 							</div>
 						</td>

@@ -9,9 +9,8 @@
 		<link rel="stylesheet" href="../persona/css/style.css" />
 		
 		<!-- Click Functions -->
-		<script>
+		<script>		
 			$(document).ready(function() {
-			
 				//Clickable MBO
 				$('td.mbo .click').on('click', function() {
 					if($('.about-me').css("display", "block")) {
@@ -108,8 +107,33 @@
 					// Exit Games
 					$('#games').css("display", "none");
 				});
+				
+				//Clickable Sport
+				$('td.sport .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Sport
+					$('#sport').css("display", "block");
+				});
+				$('.exitSport').on('click', function() {				
+					// Exit Sport
+					$('#sport').css("display", "none");
+				});
+				
+				//Clickable Sport
+				$('td.familie .click').on('click', function() {
+					if($('.about-me').css("display", "block")) {
+						$('.about-me').css("display", "none")
+					}
+					// Open Sport
+					$('#familie').css("display", "block");
+				});
+				$('.exitFamilie').on('click', function() {				
+					// Exit Sport
+					$('#familie').css("display", "none");
+				});
 			})
-		
 		</script>
 		
 		<!-- Animations -->
@@ -117,18 +141,16 @@
 			$(document).ready(function() {
 			
 				function animateButton() {
-					$('.around-daan .click.bounce1').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce2').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce3').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce4').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce5').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce6').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce7').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce9').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce10').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
-					$('.around-daan .click.bounce11').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);					
+					$('.around-daan .click.bounce1').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce2').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce3').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce4').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce5').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce6').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce7').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce8').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
+					$('.around-daan .click.bounce9').delay(800 + Math.random()*4000).animate({'top': '5px'}, 400).animate({'top': '0px'}, 400,animateButton);
 				}
 				animateButton();
 			});
@@ -142,38 +164,8 @@
 		</style>
 	</head>
 
-	<body class="body-home">		
-		<div>
-			<div class="background">
-				<table>
-					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td><img src=""></td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-					</tr>
-				</table>
-			</div>
-		
+	<body class="body-home">
+		<div>		
 			<div class="around-daan">
 				<table>
 				<!-- RIJ #1 -->
@@ -182,30 +174,30 @@
 							<div class="img-wrapper">
 								<img class="image" src="../persona/images/jeugd.png">
 								<div class="click bounce1"><span>Mijn jeugd</span></div>
-							</div>							
+							</div>
 						</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="animated hobbies">
+							<div class="img-wrapper">
+								<img class="image" src="../persona/images/hobbies.png">
+								<div class="click bounce2"><span>Hobbies</span></div>
+							</div>
+						</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td class="animated games">
 							<div class="img-wrapper">
-								<img class="image" src="../persona/images/hobby.png">
-								<div class="click bounce6"><span>Favoriete Games</span></div>
+								<img class="image" src="../persona/images/games.png">
+								<div class="click bounce3"><span>Favoriete Games</span></div>
 							</div>
 						</td>
 					</tr>
 				<!-- RIJ #2 -->
 					<tr>
 						<td>&nbsp;</td>
-						<td class="animated mbo">
-							<div class="img-wrapper">
-								<img class="image" src="../persona/images/graduation.png">
-								<div class="click bounce2"><span>Vorige MBO</span></div>
-							</div>
-						</td>
-						<td>&nbsp;</td>						
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
@@ -213,15 +205,15 @@
 					</tr>
 				<!-- RIJ #3 -->
 					<tr>
-						<td>&nbsp;</td>						
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
-						<td class="animated rrrr">
+						<td>&nbsp;</td>
+						<td class="animated sport">
 							<div class="img-wrapper">
-								<img class="image" src="../persona/images/graduation.png">
-								<div class="click bounce7"><span>[Insert Text]</span></div>
+								<img class="image" src="../persona/images/sport.png">
+								<div class="click bounce4"><span>Sport</span></div>
 							</div>
 						</td>
 						<td>&nbsp;</td>
@@ -229,62 +221,52 @@
 				<!-- RIJ #4 -->
 					<tr>
 						<td>&nbsp;</td>
-						<td class="animated hobbies">
-							<div class="img-wrapper">
-								<img class="image" src="../persona/images/hobby.png">
-								<div class="click bounce3"><span>Hobbies</span></div>
-							</div>
-						</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td class="animated rrrr">
+						<td class="animated mbo">
 							<div class="img-wrapper">
 								<img class="image" src="../persona/images/graduation.png">
-								<div class="click bounce8"><span>[Insert Text]</span></div>
+								<div class="click bounce5"><span>Vorige MBO</span></div>
 							</div>
 						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 					</tr>
 				<!-- RIJ #5 -->
-					<tr>						
+					<tr>
 						<td class="animated werk">
 							<div class="img-wrapper">
 								<img class="image" src="../persona/images/work.png">
-								<div class="click bounce4"><span>Mijn werk</span></div>
+								<div class="click bounce6"><span>Mijn werk</span></div>
 							</div>
 						</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="animated familie">
+							<div class="img-wrapper">
+								<img class="image" src="../persona/images/familie.png">
+								<div class="click bounce7"><span>Mijn familie</span></div>
+							</div>
+						</td>
 						<td>&nbsp;</td>
 					</tr>
 				<!-- RIJ #6 -->
 					<tr>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>						
-						<td>&nbsp;</td>						
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
-						<td class="animated rrrr">
-							<div class="img-wrapper">
-								<img class="image" src="../persona/images/graduation.png">
-								<div class="click bounce9"><span>[Insert Text]</span></div>
-							</div>
-						</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 					</tr>
 				<!-- RIJ #7 -->
 					<tr>
 						<td>&nbsp;</td>
-						<td class="animated hier-na">
-							<div class="img-wrapper">
-								<img class="image" src="../persona/images/question.png">
-								<div class="click bounce5"><span>Na SintLucas</span></div>
-							</div>
-						</td>
+						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
@@ -294,44 +276,47 @@
 				<!-- RIJ #8 -->
 					<tr>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td class="animated rrrr">
-							<div class="img-wrapper">
-								<img class="image" src="../persona/images/graduation.png">
-								<div class="click bounce10"><span>[Insert Text]</span></div>
-							</div>
-						</td>
-						<td>&nbsp;</td>
-					</tr>
-				<!-- RIJ #9 -->
-					<tr>
 						<td class="animated muziek">
 							<div class="img-wrapper">
 								<img class="image" src="../persona/images/music.png">
-								<div class="click bounce1"><span>Muziek</span></div>
+								<div class="click bounce8"><span>Muziek</span></div>
 							</div>							
 						</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td class="animated hier-na">
+							<div class="img-wrapper">
+								<img class="image" src="../persona/images/question.png">
+								<div class="click bounce9"><span>Na SintLucas</span></div>
+							</div>
+						</td>
+					</tr>
+				<!-- RIJ #9 -->
+					<tr>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
+						<td>&nbsp;</td>
 						<div class="ik-ben-daan-wrapper">
-							<img class="ik-ben-daan-image" src="../persona/work/ik-ben-daan.png">
+							<img class="ik-ben-daan-image" src="../persona/work/ik-ben-daan_2.png">
 						</div>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 					</tr>
-				</table>			
+				</table>
 			</div>
 			
 			<div class="imageMiddle">
 				<table>
 					<tr>
-						<td>&nbsp;</td>
-						<td>MP4 video</td>
-						<td>&nbsp;</td>
+						<td>
+						<video loop autoplay muted id="personaVid">
+							<source src="../persona/vid/video_glitch.mp4" type="video/mp4" />
+						</video>
+						<script>document.getElementById('personaVid').play();</script>
+						</td>
 					</tr>
 				</table>
 			</div>
@@ -352,10 +337,10 @@
 						<br>
 						Ik ben opgegroeid met Pokémon en dat vond ik vroeger zo leuk dat ik destijds op vakanties altijd veel van mijn eigen monstertjes verzon.
 						<br>
-						Ik heb nog een van de boeken waar ik destijds in heb getekent. Ik heb wat foto's geplaatst op de pagina als je hier onder klikt.
+						Ik heb nog een van de boeken waar ik destijds in heb getekend. Ik heb wat foto's geplaatst op de pagina als je hier onder klikt.
 					</p>
 					<a class="learnMore" href="../persona/pages/jeugd.html">Voorbeelden zien? Klik hier!</a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst Muziek -->
@@ -366,15 +351,16 @@
 				<div class="text">
 					<h3>Mijn Muzieksmaken</h3>
 					<p>
-						Simelweg gezegd, kan ik overal naar lusiteren.
+						Eerlijk gezegd, kan ik wel overal naar luisteren. (Behalve de Boef shit enzo, die troep komt er bij mij niet in.)
 						<br>
-						Maar ik luister op het moment veel naar:
+						<br>
+						Op het moment luister ik veel naar:
 						<br>
 						<ul>
 							<li>Rawstyle</li>
 							<li>Hardstyle</li>
 							<li>Frenchcore</li>
-							<li>Alternative Pop</li>
+							<li>Alternative Pop (&amp; Hiphop)</li>
 						</ul>
 						<br>
 						Een paar van mijn leukste artisten op het moment:
@@ -385,10 +371,10 @@
 							<li>Crypton</li>
 							<li>Warface</li>
 							<li>Sickmode</li>
-						</ul>						
+						</ul>
 					</p>
 					<a class="learnMore" href="../persona/pages/muziek.html">Meer zien, of horen? Klik hier!</a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst MBO -->
@@ -409,7 +395,7 @@
 						Helaas was dit portfolio verre van genoeg om een HBO te doen, vandaar de keuze voor deze opleiding.					
 					</p>
 					<a class="learnMore" href="../persona/pages/mbo-ao.html">Dit is niet zo boeiend, maar je mag meer weten. Klik dan hier!</a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst Hobbies -->
@@ -420,15 +406,15 @@
 				<div class="text">
 					<h3>Wat zijn mijn hobbies...</h3>
 					<p>
-						Zoals je misschien rechts al hebt gezien, houd ik heel erg van 3D objecten.	
+						Zoals je misschien hieronder al hebt gezien, houd ik een wapen vast. Dit wapen heb ik zelf als 3D model gemaakt voor Minecraft (Vandaar ook de Steve onderin).
 						<br>
-						Zelf maak ik voor Minecraft al sinds 2015 3D modellen, en die verkoop ik door over de hele wereld.
+						Deze 3D modellen maak ik al sinds 2015 en die verkoop ik dan door over de hele wereld.
 						<br>
 						<br>
 						Dat is ook de reden waarom ik nu hier ben, ik wil graag "professioneel" leren modeleren, zodat ik daarmee de Game Industrie in kan.
 					</p>
 					<a class="learnMore" href="../persona/pages/hobbies.html">Hier staan hele leuke dingen! Klik maar gewoon. </a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst Werk -->
@@ -449,7 +435,7 @@
 						Tevens werk ik soms nog voor mijn oude stage, waar ik geen contract heb maar wel per uur betaald wordt.
 					</p>
 					<a class="learnMore" href="../persona/pages/werk.html">Wat voorbeelden zien? Klik dan hier.</a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst Na Sint Lucas -->
@@ -471,7 +457,7 @@
 						Als ik een bedrijfje op wil zetten moet ik daar wel echt goed over nadenken. Want dat is niet 1-2-3 gedaan.
 					</p>
 					<a class="learnMore" href="../persona/pages/na-sintlucas.html">Meer uitleg? Lees het hier.</a>
-				</div>				
+				</div>
 			</div>
 			
 			<!-- Tekst Games -->
@@ -496,7 +482,47 @@
 						Ik vind vooral de eerste Subnautica heel goed, want aangezien het een terror game is houdt de game je op het puntje van je stoel terwijl je rustig rond zwemt.
 					</p>
 					<a class="learnMore" href="../persona/pages/games.html">Hier vind je wat van de games.</a>
-				</div>				
+				</div>
+			</div>
+			
+			<!-- Tekst Sport -->
+			<div class="about-me clickable" id="sport">
+				<div class="exitSport">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Sport ervaringen</h3></h3>
+					<p>
+						Ik heb een hele leuke ervaring gehad, voor mijn ongeluk dan.
+						<br>
+						Dit gebeurde bij hockey, ik heb ook wel gevoetbald toen ik klein was maar ik zat meer bloemen te tellen dan echt mee te doen.
+						<br>
+						<br>
+						Volgens mij heb ik vanaf mijn 8e of 9e tot mijn 15e fanatiek gehockeyd, want toen ik 16 was kreeg ik een ongeluk.
+						<br>
+						Ik heb toen ik 17 was een operatie er voor gehad, en ben sinds vorig jaar weer begonnen met trainen maar geen wedstrijden.
+					</p>
+					<a class="learnMore" href="../persona/pages/sport.html">Hier meer over sport en het ongeluk.</a>
+				</div>
+			</div>
+			
+			<!-- Tekst Familie -->
+			<div class="about-me clickable" id="familie">
+				<div class="exitFamilie">
+					<span>X</span>
+				</div>
+				<div class="text">
+					<h3>Mijn Familie</h3></h3>
+					<p>
+						Er valt niet veel te klagen over mijn familie, van een kant tenminste
+						<br>
+						Mijn moeders kant is heel gezellig en ook nog redelijk groot, van mijn vaders kant.. Die zie ik bijna nooit.
+						<br>
+						<br>
+						Ik heb ook een hele goede vriend die ik beschouw als familie en een zeer lieve vriendin die nu sinds kort ook bij de familie hoort.
+					</p>
+					<a class="learnMore" href="../persona/pages/familie.html">Meer weten over mijn familie??</a></a>
+				</div>
 			</div>
 			
 			<!-- END DOCUMENT -->
