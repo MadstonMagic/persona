@@ -49,7 +49,7 @@ body {
 	position: absolute;
     left: 50%;
     top: 0;
-    width: 75%;
+    width: 85%;
     transform: translate(-50%, 0);
     z-index: -10;
     padding: 15px;
@@ -339,11 +339,17 @@ a.learnMore:hover:before, alearnMore:focus:before {
 
 
 
-@media screen and (max-width: 768px) {	
+@media screen and (max-width: 340px) {	
 	.subpage .body-main .content-table .row {width: 100%; display: inline-block;float:left;}
 .img-large img {width:75%;left:25%;transform:translate(-25%,-50%);}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {	
+@media screen and (min-width: 341px) and (max-width: 768px) {	
 	.subpage .body-main .content-table .row {width: 50%; display: inline-block;float:left;}
+}
+
+/* Homepage */
+@media screen and (max-width: 1400px) {	
+	.around-daan table {width: 100%;}
+	.around-daan table tr td {height: 60px;}
 }
