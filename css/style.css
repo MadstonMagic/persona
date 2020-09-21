@@ -339,6 +339,39 @@ a.learnMore:hover:before, alearnMore:focus:before {
 
 
 
+/* Home Page disclaimer */
+.scroll-note {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999;
+    width: 100%;
+    margin: 0;
+    padding: 0px 16px;
+    background: var(--darkGray);
+}
+
+.scroll-note .close {
+    position: fixed;
+    right: 0;
+    transform: translate(-100%,0);
+    color: var(--sint-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.scroll-note .close:hover {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 340px) {	
 	.subpage .body-main .content-table .row {width: 100%; display: inline-block;float:left;}
 .img-large img {width:75%;left:25%;transform:translate(-25%,-50%);}
